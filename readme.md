@@ -1,5 +1,6 @@
 # Begin basic Apollo GraphQL API
 
+[Apollo](https://www.apollographql.com/) based GraphQL example
 
 ## Getting started
 - Start the local dev server: `npm start`
