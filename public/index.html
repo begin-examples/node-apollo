@@ -5,13 +5,39 @@
     <title>Begin + Apollo GraphQL API</title>
     <link rel="stylesheet" href="https://static.begin.app/starter/default.css">
     <link href="data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" rel="icon" type="image/x-icon">
+    <style>
+      :root {
+        --dark: #333333;
+        --light: #EFEFEF;
+      }
+
+      .padding-0 {
+        padding: 1rem;
+      }
+
+      .color-light {
+        color: var(--light);
+      }
+
+      .background-color-dark {
+        background-color: var(--dark);
+      }
+
+      .border-radius-4 {
+        border-radius: 4px;
+      }
+
+    </style>
   </head>
   <body>
     <h1 class="center-text">Begin + Apollo GraphQL API</h1>
-    <style>
-      main {background: grey;}
-    </style>
-    <main>Loading...</main>
+    <section
+      class="padding-0 background-color-dark border-radius-4"
+    >
+      <pre><code id="code" class="color-light">
+        Loading...
+      </code></pre>
+    </section>
 
     <!-- Example GraphQL query -->
     <script type=module>
@@ -27,8 +53,8 @@
       })
       let json = await result.json()
       console.log(json)
-      let main = document.querySelector('main')
-      main.innerHTML = `<pre>${JSON.stringify(json, null, 2)}</pre>`
+      let code = document.getElementById('code')
+      code.innerHTML = JSON.stringify(json, null, 2)
       })()
     </script>
   </body>
