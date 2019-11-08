@@ -1,5 +1,7 @@
 # Begin basic Apollo GraphQL API
 
+$BADGE
+
 [Apollo](https://www.apollographql.com/) based GraphQL example
 
 ## Getting started
