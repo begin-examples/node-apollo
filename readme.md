@@ -1,6 +1,6 @@
-<img src="https://static.begin.app/node-apollo/readme-banner.png" width="561">
+<img src="https://static.begin.app/node-apollo/readme-banner.png" width="888">
 
-\$BADGE
+$BADGE
 
 [Apollo](https://www.apollographql.com/) based GraphQL example
 
