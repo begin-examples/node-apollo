@@ -1,9 +1,8 @@
-# Begin basic Apollo GraphQL API
+<img src="https://static.begin.app/node-apollo/readme-banner.png" width="888">
 
 $BADGE
 
 [Apollo](https://www.apollographql.com/) based GraphQL example
-
 
 ## Deploy your own
 
@@ -11,14 +10,14 @@ $BADGE
 
 Deploy your own clone of this app to Begin!
 
-
 ## Getting started
+
 - Start the local dev server: `npm start`
 - Lint your code: `npm run lint`
 - Run your tests: `npm t`
 
-
 ## Reference
+
 - [Quickstart](https://docs.begin.com/en/guides/quickstart/) - basics on working locally, project structure, deploying, and accessing your Begin app
 - [Creating new routes](https://docs.begin.com/en/functions/creating-new-functions) - basics on expanding the capabilities of your app
 
