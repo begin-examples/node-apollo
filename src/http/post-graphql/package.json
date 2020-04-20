@@ -1,7 +1,7 @@
 {
   "name": "begin-app-post-graphql",
   "dependencies": {
-    "@architect/functions": "^3.8.1",
+    "@architect/functions": "^3.8.2",
     "apollo-server-lambda": "^2.11.0",
     "graphql": "^14.6.0"
   }
