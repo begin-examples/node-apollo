@@ -2,13 +2,36 @@
   "name": "begin-app",
   "version": "0.0.0",
   "description": "Begin basic Apollo GraphQL API",
+  "arc": {
+    "app": "apollo-hello",
+    "http": [
+      {
+        "/graphql": {
+          "method": "post",
+          "src": "/graphql"
+        }
+      }
+    ],
+    "tables": [
+      {
+        "data": {
+          "scopeID": "*String",
+          "dataID": "**String",
+          "ttl": "TTL"
+        }
+      }
+    ]
+  },
   "scripts": {
     "start": "cross-env NODE_ENV=testing npx sandbox",
-    "test": "cross-env NODE_ENV=testing PORT=6666 tape test/*-test.js ./test/**/*-test.js | tap-spec"
+    "test": "cross-env NODE_ENV=testing PORT=6666 tape test/*-test.js | tap-spec"
   },
   "dependencies": {
+    "@architect/functions": "latest",
+    "apollo-server-lambda": "^2.21.0",
+    "graphql": "^14.6.0",
     "@architect/sandbox": "^3.3",
-    "@begin/data": "",
+    "@begin/data": "latest",
     "cross-env": "^7.0.3",
     "tap-spec": "^5.0.0",
     "tape": "^5.1.1",

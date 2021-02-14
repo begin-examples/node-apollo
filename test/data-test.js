@@ -31,6 +31,7 @@ test('data.set (one document)', async t => {
   logJSON(result,null,2)
 })
 
+/*
 test('data.get (one document)', async t => {
   t.plan(1)
   let task = await data.get({
@@ -50,10 +51,10 @@ test('data.destroy (one document)', async t => {
   t.ok(result, 'Deleted document')
   logJSON(result,null,2)
 })
+*/
 
-/**
+/*
  * If no key is supplied, one is created automatically
- */
 test('data.set generates a unique key', async t => {
   t.plan(1)
   let result = await data.set({
@@ -62,10 +63,10 @@ test('data.set generates a unique key', async t => {
   t.ok(result.key, 'Saved document has a key')
   logJSON(result,null,2)
 })
+ */
 
 /**
  * Any (meta)data is allowed
- */
 test('data.set allows for any JSON document; only table and key are reserved', async t => {
   t.plan(1)
   let result = await data.set({
@@ -77,10 +78,10 @@ test('data.set allows for any JSON document; only table and key are reserved', a
   t.ok(Object.getOwnPropertyNames(result.key).length > 2, 'Saved document has multiple properties')
   logJSON(result,null,2)
 })
+ */
 
 /**
  * Save a batch of documents by passing an array
- */
 test('data.set accepts an array to batch save documents', async t => {
   t.plan(1)
   let result = await data.set([{
@@ -105,10 +106,10 @@ test('data.set accepts an array to batch save documents', async t => {
   t.equal(result.length, 3, 'Saved document batch')
   logJSON(result,null,2)
 })
+ */
 
 /**
  * Scan a table
- */
 test('data.get can read an entire table', async t => {
   t.plan(1)
   let result = await data.get({
@@ -117,6 +118,7 @@ test('data.get can read an entire table', async t => {
   t.ok(result.length > 1, 'Got docs')
   logJSON(result,null,2)
 })
+ */
 
 test('Shut down the Sandbox', async t => {
   t.plan(1)
