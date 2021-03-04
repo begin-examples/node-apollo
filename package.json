@@ -11,7 +11,7 @@
     "@begin/data": "",
     "cross-env": "^7.0.3",
     "tap-spec": "^5.0.0",
-    "tape": "^5.2.1",
+    "tape": "^5.2.2",
     "tiny-json-http": "^7.3.0"
   }
 }
