@@ -23,7 +23,8 @@
     ]
   },
   "scripts": {
-    "start": "npx sandbox"
+    "start": "npx sandbox",
+    "test": "echo 'Add tests for your features.'"
   },
   "dependencies": {
     "@architect/functions": "latest",
