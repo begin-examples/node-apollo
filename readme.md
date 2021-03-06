@@ -8,13 +8,16 @@ $BADGE
 
 [![Deploy to Begin](https://static.begin.com/deploy-to-begin.svg)](https://begin.com/apps/create?template=https://github.com/begin-examples/node-apollo)
 
-Deploy your own clone of this app to Begin!
 
 ## Getting started
 
-- Start the local dev server: `npm start`
-- Lint your code: `npm run lint`
-- Run your tests: `npm t`
+Start the local dev server: `npm start`
+
+
+## Guide
+
+Read the guide [**here**](https://docs.begin.com/en/guides/apollo-graphql)
+
 
 ## Reference
 
