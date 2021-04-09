@@ -23,6 +23,8 @@ exports.handler = function(event, context, callback) {
   event.httpMethod = event.httpMethod
     ? event.httpMethod
     : event.requestContext.http.method
+  // Also support hte HTTP syntax...
+  event.path = event.rawPath
   // Body is now parsed, re-encode to JSON for Apollo
   event.body = JSON.stringify(body)
   handler(event, context, callback)

@@ -27,10 +27,6 @@
     "test": "echo 'Add tests for your features.'"
   },
   "dependencies": {
-    "@architect/functions": "latest",
-    "@architect/sandbox": "latest",
-    "@begin/data": "^1.2.3",
-    "apollo-server-lambda": "^2.21.0",
-    "graphql": "^15.5.0"
+    "@architect/sandbox": "latest"
   }
 }
